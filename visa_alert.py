@@ -23,7 +23,7 @@ async def send_telegram_alert(message):
         print(f"Telegram error: {e}")
 
 def check_website() -> bool:
-    url = "https://algeria.blsspainvisa.com/"
+    url = "https://algeria.blsspainglobal.com/DZA/account/login"
     try:
         response = requests.get(url, timeout=5)
         return response.status_code != 403
